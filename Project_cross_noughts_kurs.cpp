@@ -5,6 +5,10 @@
 #include "Project_cross_noughts_kurs.h"
 
 
+#define INIT_POS_X 100
+#define INIT_POS_Y 100
+#define WIND_WIDTH 680
+#define WIND_HEIGHT 600
 #define MAX_LOADSTRING 100
 
 const int n = 20;                               // количество строк и столбцов на игровом поле (последняя строка под статистику)
@@ -52,7 +56,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,                         //осн
 	UNREFERENCED_PARAMETER(hPrevInstance);  
 	UNREFERENCED_PARAMETER(lpCmdLine);      
 
-	// TODO: разместите код здесь.
+	
 	MSG msg;
 	HACCEL hAccelTable;
 
@@ -110,7 +114,7 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
 	hInst = hInstance; 
 
 	hWnd = CreateWindow(szWindowClass, szTitle, WS_OVERLAPPEDWINDOW,
-		100, 100, 680, 600, NULL, NULL, hInstance, NULL);  //TODO: defines
+		INIT_POS_X, INIT_POS_Y, WIND_WIDTH, WIND_HEIGHT, NULL, NULL, hInstance, NULL);  
 
 	if (!hWnd)
 	{
@@ -329,7 +333,7 @@ INT_PTR CALLBACK CALLBACK SettingsDlgProc(HWND hDlg, UINT uMsg, WPARAM wParam, L
 	PAINTSTRUCT ps;
 	COLORREF crFirst, crSecond;
 	static CHOOSECOLOR cc;//структура "выбора" цвета
-	static COLORREF CustClr[16];//массив структур
+	static COLORREF CustClr[16];
 
 	switch (uMsg)
 	{

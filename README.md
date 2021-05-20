@@ -8,6 +8,7 @@ An extended version of classical 3x3 tic-tac-toe game. 2 players compete with ea
 
 Use **MS Visual Studio** to build the project, project files are provided.
 
+<<<<<<< HEAD
 Or generate **cross_noughts.sln** for **MSBuild** via **CMake**:
 
 	git clone https://github.com/rafvel17/cross_noughts
@@ -18,5 +19,8 @@ Or generate **cross_noughts.sln** for **MSBuild** via **CMake**:
 	C:\Path_to_MSBuild_exe\MSBuild.exe cross_noughts.sln
 
 #How to use
+=======
+# How to use
+>>>>>>> 96a4e245e218e87ed92318d4722c22722241db40
 
 Run output **Project_cross_noughts.exe** (basically from PROJ_DIR/x64/Release or /x64/Debug). Press **Файл->Новая Игра** and enjoy!

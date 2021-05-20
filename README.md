@@ -8,6 +8,6 @@ An extended version of classical 3x3 tic-tac-toe game. 2 players compete with ea
 
 Use **MS Visual Studio** to build the project, project files are provided.
 
-#How to use
+# How to use
 
 Run output **Project_cross_noughts.exe** (basically from PROJ_DIR/x64/Release or /x64/Debug). Press **Файл->Новая Игра** and enjoy!
